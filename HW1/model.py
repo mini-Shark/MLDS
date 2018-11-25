@@ -61,7 +61,7 @@ class shallow_model(nn.Module):
 
   def __init__(self,input_size, output_size):
     
-    super(shallow_model,self).__init__()
+    super(shallow_model,self).__init__() #继承torch.nn.Module模块的构造方法
     self.fc1 = nn.Linear(input_size,190)
     self.fc2 = nn.Linear(190,output_size)
     self.relu = nn.ReLU()
